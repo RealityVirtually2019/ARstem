@@ -15,16 +15,19 @@ public class ShowProgressBarDots : MonoBehaviour
     public bool[] progressFlg;
     public bool[] onClickedFlg;
 
-    public string temp = "";
+    public string message = "";
+
+    public ObjManager animationTrigger;
 
     
     // Start is called before the first frame update
     void Start()
     {
+        animationTrigger = GameObject.Find("ObjectManager").GetComponent <ObjManager> ();
         progressFlg = new bool[] { true, false, false, false, false, false, false, false, false, false, false };
         onClickedFlg = new bool[] { false, false, false, false, false, false, false, false, false, false, false };
 
-        triggers = new string[] { "a", "b", "c", "d" , "e", "f" , "g", "h" , "i"};
+        triggers = new string[] { "nucleotides", "adenine", "cytosine", "strand", "genes", "person", "monkey", "fly", "banana" };
         
         buttons = new GameObject[] {
             GameObject.Find("Button1"),
@@ -40,37 +43,38 @@ public class ShowProgressBarDots : MonoBehaviour
             GameObject.Find("Button11")
         };
         
-        
-        
     }
 
     // Update is called once per frame
     void Update()
     {
+
         FillProgressBar();
         SetProgressBar();
 
-        ShowProgress(temp);
+        ShowProgress(message);
 
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            SwitchSprite(1);
-        }
     }//Upfdate
 
 
 
-    public void ShowProgress(string receivedTrigger)
+    public void ShowProgress(string receivedMsg)
     {
         for(int i=0; i<triggers.Length; i++)
         {
-            if (receivedTrigger == triggers[i])
+            if (receivedMsg == triggers[i])
             {
                 OnProgressBar(buttons[i]);
             }
         }
     }//ShowProgress
 
+
+    public void ReceiveMessage(string receivedMsg){
+        message = receivedMsg;
+        GameObject.Find("Text").GetComponent<Text>().text = message;
+        // print("Message Received");
+    }
 
 
     public void SetProgressBar()
@@ -90,23 +94,36 @@ public class ShowProgressBarDots : MonoBehaviour
     }//SetProgressBar
 
 
-
-    public void SwitchSprite(int buttonId)
-    {
-        if (progressFlg[buttonId] == true)
+    void ShowAnimation(){
+        //Register clicked button
+        int clickedButtonId = 0;
+        for (int i = 0; i < progressFlg.Length; i++)
         {
-            OnProgressBar(buttons[buttonId]);
-            progressFlg[buttonId] = false;
-            print("turn to off");
+            if (onClickedFlg[i] == true)
+            {
+                clickedButtonId = i;
+            }
         }
-        else
-        {
-            OffProgressBar(buttons[buttonId]);
-            print("turn to on");
-            progressFlg[buttonId] = true;
-        }
+        animationTrigger.HandleAction(clickedButtonId);
+    }
 
-    }//SwitchSprite
+
+    // public void SwitchSprite(int buttonId)
+    // {
+    //     if (progressFlg[buttonId] == true)
+    //     {
+    //         OnProgressBar(buttons[buttonId]);
+    //         progressFlg[buttonId] = false;
+    //         print("turn to off");
+    //     }
+    //     else
+    //     {
+    //         OffProgressBar(buttons[buttonId]);
+    //         print("turn to on");
+    //         progressFlg[buttonId] = true;
+    //     }
+
+    // }//SwitchSprite
 
 
     void OnProgressBar(GameObject _button)
@@ -131,7 +148,6 @@ public class ShowProgressBarDots : MonoBehaviour
             }
         }
 
-
         for (int i=0; i<progressFlg.Length; i++)
         {
             if (i <= clickedButtonId)
@@ -154,6 +170,7 @@ public class ShowProgressBarDots : MonoBehaviour
         }
         onClickedFlg[buttonId] = true;
     }
+
     //List<string[]> ReadCsv(string csvPath) {
     //    TextAsset csvFile;
     //    List<string[]> csvDatas = new List<string[]>();

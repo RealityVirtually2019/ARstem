@@ -7,6 +7,9 @@ public class ReceiveResult : MonoBehaviour {
 
     private static string[] m_keywords = new string[] { "nucleotides", "adenine", "cytosine", "strand", "genes", "person", "monkey", "fly", "banana" };
     private ObjManager m_ObjectManager;
+
+
+
 	// Use this for initialization
 
     void Start ()
@@ -27,7 +30,11 @@ public class ReceiveResult : MonoBehaviour {
             if (temp.Contains(m_keywords[i]))
             {
                 key = i;
-                GameObject.Find("Text").GetComponent<Text>().text = temp;               
+                //GameObject.Find("Text").GetComponent<Text>().text = temp;
+                //GameObject.Find("Buttons").GetComponent<ShowProgressBarDots>().message = temp; //Added
+                GameObject.Find("Buttons").SendMessage("ReceiveMessage", temp);
+                print("temp " + temp);
+
                 break;
             }
         }
