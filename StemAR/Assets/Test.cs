@@ -19,7 +19,7 @@ public class Test : MonoBehaviour {
 
         // Pass the name of the game object which has the onActivityResult(string recognizedText) attached to it.
         // The speech recognizer intent will return the string result to onActivityResult method of "Main Camera"
-        pluginClass.CallStatic("setReturnObject", "Main Camera");
+        pluginClass.CallStatic("setReturnObject", "ImageTarget");
         Debug.Log("Return Object Set");
 
 
