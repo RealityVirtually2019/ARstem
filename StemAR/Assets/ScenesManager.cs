@@ -25,15 +25,12 @@ public class ScenesManager : MonoBehaviour
                     SceneManager.LoadScene("ChooseLessonScene");
                     break;
             case "ChooseLessonScene":
-                    SceneManager.LoadScene("FindingTargetScene");
+            		SceneManager.LoadScene("PlayScene");
                     break;
-            case "FindingTargetScene":
-                    SceneManager.LoadScene("StartScene");
+            case "PlayScene":
+                    SceneManager.LoadScene("QuestionScene");
                     break;
-            case "StartScene":
-                    SceneManager.LoadScene("GameScene_temp");
-                    break;
-            case "GameScene_temp":
+            case "QuestionScene":
                 SceneManager.LoadScene("EndScene");
                 break;
             case "EndScene":
@@ -52,11 +49,11 @@ public class ScenesManager : MonoBehaviour
         }
     }//QuitGame()
 
-    public void BackToFindingTarget()
+    public void BackToChooseLessonScene()
     {
-        if (SceneManager.GetActiveScene().name == "StartScene")
+        if (SceneManager.GetActiveScene().name == "PlayScene")
         {
-            SceneManager.LoadScene("FindingTargetScene");
+            SceneManager.LoadScene("ChooseLessonScene");
         }
     }//BackToFindingTarget()
 
