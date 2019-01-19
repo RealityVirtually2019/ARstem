@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ReceiveResult : MonoBehaviour {
 
-    private static string[] m_keywords = new string[] { "little blocks", "acid", "form", "pairs", "dna", "genes", "humans" };
+    private static string[] m_keywords = new string[] { "nucleotides", "thymine", "cytosine", "strand", "genes", "person", "monkey", "fly", "banana" };
     private ObjManager m_ObjectManager;
 	// Use this for initialization
 
