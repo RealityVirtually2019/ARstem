@@ -60,8 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ReceiveResult.cs" />
-    <Compile Include="Assets\Test.cs" />
+    <Compile Include="Assets\ObjManager.cs" />
+    <Compile Include="Assets\Scripts\ReceiveResult.cs" />
+    <Compile Include="Assets\Scripts\Test.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
