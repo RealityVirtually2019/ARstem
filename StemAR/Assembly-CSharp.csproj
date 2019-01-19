@@ -64,6 +64,7 @@
     <Compile Include="Assets\ScenesManager.cs" />
     <Compile Include="Assets\SceneSwitcher.cs" />
     <Compile Include="Assets\Scripts\ObjManager.cs" />
+    <Compile Include="Assets\Scripts\TrackableEventHandler.cs" />
     <Compile Include="Assets\Test.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />

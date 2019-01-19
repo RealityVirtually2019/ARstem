@@ -8,7 +8,7 @@ public class ObjManager : MonoBehaviour
     [SerializeField] private GameObject[] objects;
     void Start()
     {
-        
+
     }
 
     public void HandleAction(int obj)
@@ -24,5 +24,12 @@ public class ObjManager : MonoBehaviour
         }
     }
 
+    public  void TurnOff()
+    {
+        foreach (GameObject item in objects)
+        {
+            item.SetActive(false);
+        }
+    }
 
 }
