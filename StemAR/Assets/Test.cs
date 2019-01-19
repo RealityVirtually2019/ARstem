@@ -8,7 +8,7 @@ public class Test : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         
-        btn = GameObject.Find("Button").GetComponent<Button>();
+        btn = GameObject.Find("PlayButton").GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
 	}
 	

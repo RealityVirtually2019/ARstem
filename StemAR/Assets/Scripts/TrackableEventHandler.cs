@@ -8,5 +8,11 @@ public class TrackableEventHandler : DefaultTrackableEventHandler
     {
         GameObject.FindObjectOfType<ObjManager>().TurnOff();
         base.OnTrackingLost();
+        GameObject.Find("TargetOrAnimationUI").GetComponent<ShowFindTargetUI>().ShowFindTargetBg();
+
+    }
+    protected override void OnTrackingFound() {
+        base.OnTrackingFound();
+        GameObject.Find("TargetOrAnimationUI").GetComponent<ShowFindTargetUI>().HideFindTargetBg();
     }
 }
