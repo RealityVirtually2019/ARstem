@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1043,15 +1043,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 2036b5f1e93a9d541b307a1affadf43d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 2036b5f1e93a9d541b307a1affadf43d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 2036b5f1e93a9d541b307a1affadf43d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 2036b5f1e93a9d541b307a1affadf43d, type: 3}
       propertyPath: m_Controller
@@ -2315,15 +2315,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 8395480a082cd6c44906da8d2d968958, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 8395480a082cd6c44906da8d2d968958, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 8395480a082cd6c44906da8d2d968958, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 8395480a082cd6c44906da8d2d968958, type: 3}
       propertyPath: m_Controller
@@ -5323,10 +5323,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 871976135}
     m_Modifications:
-    - target: {fileID: 100000, guid: a31e98fed086e1a468e58a1345f3ffe7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5714573396171610938, guid: a31e98fed086e1a468e58a1345f3ffe7,
         type: 3}
       propertyPath: m_Name
@@ -5334,6 +5330,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5714573396171610938, guid: a31e98fed086e1a468e58a1345f3ffe7,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a31e98fed086e1a468e58a1345f3ffe7, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
