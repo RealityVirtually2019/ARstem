@@ -25,9 +25,9 @@ public class ScenesManager : MonoBehaviour
                     SceneManager.LoadScene("ChooseLessonScene");
                     break;
             case "ChooseLessonScene":
-            		SceneManager.LoadScene("PlayScene");
+            		SceneManager.LoadScene("Game");
                     break;
-            case "PlayScene":
+            case "Game":
                     SceneManager.LoadScene("QuestionScene");
                     break;
             case "QuestionScene":
@@ -51,7 +51,7 @@ public class ScenesManager : MonoBehaviour
 
     public void BackToChooseLessonScene()
     {
-        if (SceneManager.GetActiveScene().name == "PlayScene")
+        if (SceneManager.GetActiveScene().name == "Game")
         {
             SceneManager.LoadScene("ChooseLessonScene");
         }

@@ -211,18 +211,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288885785}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 290193268}
   - {fileID: 1872900009}
-  m_Father: {fileID: 485773321}
-  m_RootOrder: 2
+  m_Father: {fileID: 2050689327}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 869, y: 12}
+  m_AnchoredPosition: {x: 1126.6028, y: 422.31433}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &288885787
@@ -264,13 +264,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 290193269}
   toggleTransition: 1
   graphic: {fileID: 1285721881}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 2050689328}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &290193267
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,12 +965,9 @@ RectTransform:
   m_Children:
   - {fileID: 391054702}
   - {fileID: 337912386}
-  - {fileID: 288885786}
-  - {fileID: 1770148550}
-  - {fileID: 1803039048}
-  - {fileID: 1737000069}
-  - {fileID: 510859184}
-  - {fileID: 2105743569}
+  - {fileID: 2050689327}
+  - {fileID: 1062694138}
+  - {fileID: 1580138149}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -990,7 +987,7 @@ GameObject:
   - component: {fileID: 510859184}
   - component: {fileID: 510859185}
   m_Layer: 5
-  m_Name: Toggle3T
+  m_Name: Toggle1F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1009,12 +1006,12 @@ RectTransform:
   m_Children:
   - {fileID: 2109865548}
   - {fileID: 471991668}
-  m_Father: {fileID: 485773321}
-  m_RootOrder: 6
+  m_Father: {fileID: 2050689327}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 967, y: 12}
+  m_AnchoredPosition: {x: 1224.6028, y: 422.31433}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &510859185
@@ -1056,7 +1053,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2109865549}
   toggleTransition: 1
   graphic: {fileID: 2122697333}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 2050689328}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1358,6 +1355,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048634373}
   m_CullTransparentMesh: 0
+--- !u!1 &1062694137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1062694138}
+  - component: {fileID: 1062694139}
+  m_Layer: 0
+  m_Name: Toggle2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1062694138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062694137}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 692.515, y: -131.67236, z: -5.85335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1770148550}
+  - {fileID: 1737000069}
+  m_Father: {fileID: 485773321}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1062694139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062694137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 0
 --- !u!1 &1285721879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,6 +1845,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563265062}
   m_CullTransparentMesh: 0
+--- !u!1 &1580138148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1580138149}
+  - component: {fileID: 1580138150}
+  m_Layer: 0
+  m_Name: Toggle3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1580138149
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580138148}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 692.515, y: -131.67236, z: -5.85335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1803039048}
+  - {fileID: 2105743569}
+  m_Father: {fileID: 485773321}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1580138150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580138148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 0
 --- !u!1 &1737000068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,17 +1916,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1737000068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 5.85335}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 609319663}
   - {fileID: 1048634374}
-  m_Father: {fileID: 485773321}
-  m_RootOrder: 5
+  m_Father: {fileID: 1062694138}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 967, y: -137}
+  m_AnchoredPosition: {x: 274.48486, y: -5.3276367}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1737000070
@@ -1879,7 +1968,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 609319664}
   toggleTransition: 1
   graphic: {fileID: 1510827097}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1062694139}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1897,7 +1986,7 @@ GameObject:
   - component: {fileID: 1770148550}
   - component: {fileID: 1770148551}
   m_Layer: 5
-  m_Name: Toggle1F
+  m_Name: Toggle2T
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1911,17 +2000,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770148549}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 5.85335}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 76726807}
   - {fileID: 1563265063}
-  m_Father: {fileID: 485773321}
-  m_RootOrder: 3
+  m_Father: {fileID: 1062694138}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 869, y: -137}
+  m_AnchoredPosition: {x: 176.48486, y: -5.3276367}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1770148551
@@ -1963,13 +2052,24 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 76726808}
   toggleTransition: 1
   graphic: {fileID: 1429115969}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1062694139}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &1803039047
 GameObject:
   m_ObjectHideFlags: 0
@@ -1981,7 +2081,7 @@ GameObject:
   - component: {fileID: 1803039048}
   - component: {fileID: 1803039049}
   m_Layer: 5
-  m_Name: Toggle2T
+  m_Name: Toggle3T
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1995,17 +2095,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803039047}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 5.85335}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 807240200}
   - {fileID: 353894957}
-  m_Father: {fileID: 485773321}
-  m_RootOrder: 4
+  m_Father: {fileID: 1580138149}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 869, y: -299}
+  m_AnchoredPosition: {x: 176.48486, y: -167.32764}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1803039049
@@ -2047,13 +2147,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 807240201}
   toggleTransition: 1
   graphic: {fileID: 1393228793}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1580138150}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &1806399917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,6 +2469,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044392701}
   m_CullTransparentMesh: 0
+--- !u!1 &2050689326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2050689327}
+  - component: {fileID: 2050689328}
+  m_Layer: 0
+  m_Name: Toggle1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2050689327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050689326}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -257.60284, y: -410.31433, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 288885786}
+  - {fileID: 510859184}
+  m_Father: {fileID: 485773321}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2050689328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050689326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 0
 --- !u!1 &2105743568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2394,17 +2540,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2105743568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 5.85335}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 1806399918}
   - {fileID: 380660580}
-  m_Father: {fileID: 485773321}
-  m_RootOrder: 7
+  m_Father: {fileID: 1580138149}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 967, y: -299}
+  m_AnchoredPosition: {x: 274.48486, y: -167.32764}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2105743570
@@ -2446,7 +2592,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1806399919}
   toggleTransition: 1
   graphic: {fileID: 367535431}
-  m_Group: {fileID: 0}
+  m_Group: {fileID: 1580138150}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []

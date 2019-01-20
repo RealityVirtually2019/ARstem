@@ -11,7 +11,7 @@ public class ShowFindTargetUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        HideFindTargetBg();
+        //HideFindTargetBg();
     }
 
     // Update is called once per frame
