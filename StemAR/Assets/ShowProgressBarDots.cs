@@ -18,7 +18,7 @@ public class ShowProgressBarDots : MonoBehaviour
     public string message = "";
 
     public ObjManager animationTrigger;
-
+    public string temp;
     
     // Start is called before the first frame update
     void Start()
@@ -48,32 +48,41 @@ public class ShowProgressBarDots : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         FillProgressBar();
         SetProgressBar();
 
-        ShowProgress(message);
+        //if (Input.GetKeyDown(KeyCode.A))
+        //{
+        //    ReceiveMessage2(temp);
+        //}
 
     }//Upfdate
 
-
-
-    public void ShowProgress(string receivedMsg)
-    {
-        for(int i=0; i<triggers.Length; i++)
-        {
-            if (receivedMsg == triggers[i])
-            {
-                OnProgressBar(buttons[i]);
-            }
-        }
-    }//ShowProgress
-
+    //public void ReceiveMessage2(string receivedMsg)
+    //{
+    //    message = receivedMsg;
+    //    GameObject.Find("DebugText").GetComponent<Text>().text = message;
+    //    // print("Message Received");
+    //    for (int i = 0; i < triggers.Length; i++)
+    //    {
+    //        if (receivedMsg == triggers[i])
+    //        {
+    //            enableOnClickedFlg(i);
+    //        }
+    //    }
+    //}
 
     public void ReceiveMessage(string receivedMsg){
         message = receivedMsg;
-        GameObject.Find("Text").GetComponent<Text>().text = message;
+        GameObject.Find("DebugText").GetComponent<Text>().text = message;
         // print("Message Received");
+        for (int i = 0; i < triggers.Length; i++)
+        {
+            if (receivedMsg == triggers[i])
+            {
+                enableOnClickedFlg(i);
+            }
+        }
     }
 
 
@@ -94,9 +103,31 @@ public class ShowProgressBarDots : MonoBehaviour
     }//SetProgressBar
 
 
-    void ShowAnimation(){
-        //Register clicked button
+    //void ShowAnimation(){
+    //    //Register clicked button
+    //    animationTrigger.HandleAction(CheckClickedBar());
+    //}
+    
+    void FillProgressBar()
+    {
+        for (int i=0; i<progressFlg.Length; i++)
+        {
+            if (i <= CheckClickedBar())
+            {
+                progressFlg[i] = true;
+            }
+            else
+            {
+                progressFlg[i] = false;
+            }
+        }//for
+    }//FillProgressBar
+
+
+    int CheckClickedBar()
+    {
         int clickedButtonId = 0;
+        //Register clicked button
         for (int i = 0; i < progressFlg.Length; i++)
         {
             if (onClickedFlg[i] == true)
@@ -104,7 +135,31 @@ public class ShowProgressBarDots : MonoBehaviour
                 clickedButtonId = i;
             }
         }
-        animationTrigger.HandleAction(clickedButtonId);
+        return clickedButtonId;
+    }
+    
+
+    public void enableOnClickedFlg(int buttonId)
+    {
+        for (int i = 0; i < onClickedFlg.Length; i++)
+        {
+            onClickedFlg[i] = false;
+        }
+        onClickedFlg[buttonId] = true;
+        //enable only onclicked bar
+
+        animationTrigger.HandleAction(CheckClickedBar());
+    }
+
+
+    void OnProgressBar(GameObject _button)
+    {
+        _button.GetComponent<Image>().sprite = onImg;
+    }
+
+    void OffProgressBar(GameObject _button)
+    {
+        _button.GetComponent<Image>().sprite = offImg;
     }
 
 
@@ -124,52 +179,6 @@ public class ShowProgressBarDots : MonoBehaviour
     //     }
 
     // }//SwitchSprite
-
-
-    void OnProgressBar(GameObject _button)
-    {
-        _button.GetComponent<Image>().sprite = onImg;
-    }
-
-    void OffProgressBar(GameObject _button)
-    {
-        _button.GetComponent<Image>().sprite = offImg;
-    }
-
-    void FillProgressBar()
-    {
-        int clickedButtonId = 0;
-        //Register clicked button
-        for (int i = 0; i < progressFlg.Length; i++)
-        {
-            if (onClickedFlg[i] == true)
-            {
-                clickedButtonId = i;
-            }
-        }
-
-        for (int i=0; i<progressFlg.Length; i++)
-        {
-            if (i <= clickedButtonId)
-            {
-                progressFlg[i] = true;
-            }
-            else
-            {
-                progressFlg[i] = false;
-            }
-        }//for
-    }//FillProgressBar
-    
-
-    public void enableOnClickedFlg(int buttonId)
-    {
-        for (int i = 0; i < onClickedFlg.Length; i++)
-        {
-            onClickedFlg[i] = false;
-        }
-        onClickedFlg[buttonId] = true;
-    }
 
     //List<string[]> ReadCsv(string csvPath) {
     //    TextAsset csvFile;
