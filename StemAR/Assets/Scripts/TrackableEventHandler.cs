@@ -7,6 +7,13 @@ public class TrackableEventHandler : DefaultTrackableEventHandler
    protected override void OnTrackingLost()
     {
         GameObject.FindObjectOfType<ObjManager>().TurnOff();
+        AudioManager am= GameObject.FindObjectOfType<AudioManager>();
+        if (AudioManager.StartApp)
+        {
+            float pauseTime = am.audioPlay(11);
+            am.audioStop(pauseTime);
+            AudioManager.StartApp = true;
+        }
         base.OnTrackingLost();
         GameObject.Find("TargetOrAnimationUI").GetComponent<ShowFindTargetUI>().ShowFindTargetBg();
 
@@ -15,4 +22,5 @@ public class TrackableEventHandler : DefaultTrackableEventHandler
         base.OnTrackingFound();
         GameObject.Find("TargetOrAnimationUI").GetComponent<ShowFindTargetUI>().HideFindTargetBg();
     }
+
 }

@@ -17,7 +17,10 @@ public class ReceiveResult : MonoBehaviour {
         m_ObjectManager = GameObject.Find("ObjectManager").GetComponent <ObjManager> ();
 	}
 	
-    void onActivityResult(string recognizedText){
+    void onActivityResult(string recognizedText)
+    {
+        AudioManager am=GameObject.FindObjectOfType<AudioManager>();
+        am.audioStop();
         char[] delimiterChars = {'~'};
         string[] result = recognizedText.Split(delimiterChars);
         string temp = result[0].ToLower();
@@ -33,6 +36,7 @@ public class ReceiveResult : MonoBehaviour {
                 //GameObject.Find("Text").GetComponent<Text>().text = temp;
                 //GameObject.Find("Buttons").GetComponent<ShowProgressBarDots>().message = temp; //Added
                 GameObject.Find("Buttons").SendMessage("ReceiveMessage", temp);
+                am.audioPlay(key);
                 print("temp " + temp);
 
                 break;

@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TitleScene.unity
     guid: 2d5fdc60f8567a74c88b4a04b5d21666
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ChooseLessonScene.unity
     guid: 5ebb314a7aad32742b05e3710af80b70
   - enabled: 0
@@ -26,10 +26,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/GameScene_temp.unity
     guid: 4b4d3aac1fe196e4191db71b0d5a18d1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/QuestionScene.unity
     guid: 48eaa22205175d144805f50e44c102f2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EndScene.unity
     guid: f5b03bf5f5fa96a48a222864d32d72e8
   m_configObjects: {}
