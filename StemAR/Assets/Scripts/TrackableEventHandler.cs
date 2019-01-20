@@ -10,7 +10,7 @@ public class TrackableEventHandler : DefaultTrackableEventHandler
         AudioManager am= GameObject.FindObjectOfType<AudioManager>();
         if (AudioManager.StartApp)
         {
-            float pauseTime = am.audioPlay(11);
+            float pauseTime = am.audioPlay(10);
             am.audioStop(pauseTime);
             AudioManager.StartApp = true;
         }
