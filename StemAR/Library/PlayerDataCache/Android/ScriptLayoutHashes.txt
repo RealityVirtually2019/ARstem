@@ -1,10 +1,6 @@
 Android
 PlayerPath?
-<<<<<<< HEAD
 C:/Users/Juan Pablo/Documents/Unity Projects/Projects/StemAR/StemAR.apk
-=======
-C:/Users/moritasemi/WorkSpace/STEMAR_RVHackathon/StemAR/App_Game.apk
->>>>>>> 7f3168f813f4d55137bd07575f14a965764d9c56
 SceneListBegin?
 Assets/Scenes/Game.unity
 SceneListEnd?
@@ -211,6 +207,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ReceiveResult
 d006e6e1f8f02d2b8f2186787446eae2 Assembly-CSharp.dll:.SceneSwitcher
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
+2f3334932b298cc6517adf4d2eff2871 Assembly-CSharp.dll:.ShowProgressBarDots
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 1dcb82730d983b77cec736c6ef19f814 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -318,10 +315,5 @@ ae91c545dea6ac849dd81c4b660c68ca Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-<<<<<<< HEAD
-684f79e055fb3670faa3f3dcf0eb404e Assembly-CSharp.dll:.ShowProgressBarDots
-=======
-2f3334932b298cc6517adf4d2eff2871 Assembly-CSharp.dll:.ShowProgressBarDots
-c3d77f1a234ef756bb8fcc5c0e928a8e Assembly-CSharp.dll:.ToggleController
 25b9a2da979c47717ad6404cc1dc4563 Assembly-CSharp.dll:.ShowFindTargetUI
->>>>>>> 7f3168f813f4d55137bd07575f14a965764d9c56
+c3d77f1a234ef756bb8fcc5c0e928a8e Assembly-CSharp.dll:.ToggleController
